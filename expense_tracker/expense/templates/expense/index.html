@@ -1,0 +1,118 @@
+{% extends 'expense/layout.html' %}
+{% load static %}
+
+{% block title %} Curtain store {% endblock %}
+
+
+{% block content %}
+
+
+<section class="production">
+    <div class="container">
+        <h2 class="production-title">Наше производство</h2>
+        <div class="production-grid">
+            <div class="production-item">
+                <img src="../static/img/kitchens.jpg" alt="Кухни">
+                <div class="overlay">
+                    <p>Кухни</p>
+                </div>
+            </div>
+            <div class="production-item">
+                <img src="../static/img/office_furniture.jpg" alt="Мебель для офиса">
+                <div class="overlay">
+                    <p>Мебель для офиса</p>
+                    <button class="order-btn">Заказать замер</button>
+                </div>
+            </div>
+        </div>
+        <div class="production-grid_v2">
+            <div class="production-item">
+                <img src="../static/img/wardrobes.jpg" alt="Гардеробные">
+                <div class="overlay">
+                    <p>Гардеробные</p>
+                </div>
+            </div>
+            <div class="production-item">
+                <img src="../static/img/closets.jpg" alt="Шкафы">
+                <div class="overlay">
+                    <p>Шкафы</p>
+                </div>
+            </div>
+            <div class="production-item">
+                <img src="../static/img/kids-furniture.jpg" alt="Мебель для детской">
+                <div class="overlay">
+                    <p>Мебель для детской</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="gallery">
+    <div class="container">
+        <h2 class="gallery-title">Галерея работ</h2>
+        <p class="gallery-text">Наши специалисты помогают не только произвести точные расчеты и подобрать дизайнерское
+            решение, но и задейстовать каждый миллиметр полезного пространства. Мы производим мебель отвечающую за
+            функиональность и практичность.</p>
+        <div class="gallery-container">
+            <div class="gallery-main">
+                <img src="../static/img/sleeping_room.jpg" alt="Основное изображение">
+            </div>
+            <div class="gallery-thumbnails">
+                <div class="gallery-item"><img src="../static/img/wardrobes_2.jpg" alt="Фото 1"></div>
+                <div class="gallery-item"><img src="../static/img/office.jpg" alt="Фото 2"></div>
+                <div class="gallery-item"><img src="../static/img/office_2.jpg" alt="Фото 3"></div>
+                <div class="gallery-item"><img src="../static/img/kitchen_2.jpg" alt="Фото 4"></div>
+            </div>
+        </div>
+        <div class="go_to_gallery"><a href="#">Перейти в галерею</a></div>
+    </div>
+</section>
+
+
+<section class="services">
+    <div class="container">
+        <div class="services-description-title">
+            <p class="services-subtitle">ДОСТАВИМ БЕСПЛАТНО, СОБЕРЕМ БЫСТРО</p>
+            <h2 class="services-title">Сервисные услуги нашей компании</h2>
+        </div>
+        <div class="services-description">
+            <div class="services-content">
+                <p class="services-text">
+                    Мы берем на себя транспортировку заказов и уделяем внимание упаковке товара, заботимся, чтобы клиент
+                    получил товар без сколов, деформаций и замятых углов. После готовности заказа с вами свяжется логист
+                    для согласования времени и даты доставки.
+                </p>
+                <p class="services-text">
+                    Выполняем сборку мебели не позднее двух недель с даты получения заказа. Наши мастера используют
+                    только профессиональные инструменты, выполняя работу быстро. По завершению работ оставляют за собой
+                    чистоту, убирают упаковочный материал и прочий мусор.
+                </p>
+                <p class="services-text">
+                    Мы даем гарантию 3 года на всю продукцию и сервисные услуги. Условия гарантии и условия эксплуатации
+                    будут отражены в договоре оказания услуг.
+                </p>
+            </div>
+
+            <div class="services-icons">
+                <div class="icon-box">
+                    <img src="../static/img/delivery.jpg" alt="Доставка">
+                </div>
+                <div class="icon-box">
+                    <img src="../static/img/services.jpg" alt="Сборка">
+                </div>
+                <div class="icon-box">
+                    <img src="../static/img/guarantee.jpg" alt="Гарантия">
+                </div>
+                <a href="#" class="learn-more">Узнать подробнее</a>
+            </div>
+        </div>
+        <p class="services-note">
+            *В некоторых случаях условия могут отличаться, уточняйте у менеджера отдела продаж
+        </p>
+    </div>
+</section>
+
+
+{% endblock %}
